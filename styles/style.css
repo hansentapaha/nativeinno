@@ -1,49 +1,92 @@
 :root {
-    --primary-red: #8B1E3F;
+    --primary-red: #651f18;
     --text-black: #000000;
     --soft-white: #FFFFFF;
-    --background-cream: #F8F4F0;
+    --background-cream: #efeae0;
     --dark-gray: #333333;
   }
   
   body {
-    background-color: var(--background-cream);
-    color: var(--text-black);
+    background-color: var(--primary-red); /*the who we are, educational kits, etc section*/
+    color: var(--background-cream);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
   }
   
   header {
-    background-color: var(--primary-red);
-    color: var(--soft-white);
+    background-color: var(--background-cream); /*#this is for the NATIVE INNOVATIVE DESIGNS title*/
+    color: var(--text-black);
     padding: 1.5rem;
     text-align: center;
   }
   
   header .logo {
-    width: 120px;
+    width: 300px;
     margin-bottom: 1rem;
+    border-radius: 10px;
   }
   
   nav a {
-    color: var(--soft-white);
+    color: var(--primary-red);
     margin: 0 1rem;
     text-decoration: none;
     font-weight: bold;
   }
+
+  .hero {
+    background-color: var(--primary-red);
+    color: var(--background-cream);
+    text-align: center;
+    padding: 4rem 2rem;
+  }
   
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .button {
+    background-color: var(--primary-red);
+    color: var(--soft-white);
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .button:hover {
+    background-color: #4d1712; /* Slightly deeper shade for hover */
+    transform: scale(1.02);
+  }
+
   section {
-    padding: 2rem;
+    padding: 2rem 4rem;
+    max-width: 960px;
+    margin: 0 auto;
+    line-height: 1.6;
   }
   
   footer {
     background-color: var(--dark-gray);
-    color: var(--soft-white);
+    color: var(--background-cream);
     text-align: center;
     padding: 1rem;
   }
-  
+
   @media (max-width: 600px) {
     header .logo {
       width: 80px;
