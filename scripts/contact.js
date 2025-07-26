@@ -12,16 +12,14 @@
       return;
     }
 
-    const data = {
-      name: document.getElementById('name').value,
-      email: document.getElementById('email').value,
-      message: document.getElementById('message').value,
-      nickname: form.nickname.value // honeypot
-    };
+    const formData = new URLSearchParams();
+  formData.append("name", document.getElementById("name").value);
+  formData.append("email", document.getElementById("email").value);
+  formData.append("message", document.getElementById("message").value);
+  formData.append("nickname", form.nickname.value);
 
     const response = await fetch("https://script.google.com/macros/s/AKfycbxLFugJLlivCuO0hfsu88nCuaMe7q9o1iGk6jiniXAsSlu_oxUCGqLQUaK1WW0A9UjqTw/exec", {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
     });
 
