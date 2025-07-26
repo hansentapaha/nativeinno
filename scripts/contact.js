@@ -20,7 +20,7 @@
 
     const response = await fetch("https://script.google.com/macros/s/AKfycbxLFugJLlivCuO0hfsu88nCuaMe7q9o1iGk6jiniXAsSlu_oxUCGqLQUaK1WW0A9UjqTw/exec", {
       method: 'POST',
-      body: JSON.stringify(data)
+      body: formData
     });
 
     const result = await response.json();
