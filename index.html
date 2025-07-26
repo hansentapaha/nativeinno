@@ -33,13 +33,36 @@
         <p>Explore hands-on electronics kits for schools and universities.</p>
     </section>
 
-    <section id="contact">
+    <!--<section id="contact">
         <h2>Contact Us</h2>
         <p> Email us at: <a href="mailto:sales@nativeinno.com" class="button">sales@nativeinno.com</a></p>
     </section>
+-->
+
+    <section id="contact" style="padding: 2rem;">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+    <input type="text" name="nickname" style="display:none"> <!-- honeypot -->
+
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" required><br /><br />
+
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" required><br /><br />
+
+    <label for="message">Message:</label><br />
+    <textarea id="message" rows="5" required></textarea><br /><br />
+
+    <input type="hidden" id="startTime"> <!-- time trap -->
+
+    <button type="submit">Send</button>
+    <p id="status"></p>
+  </form>
+</section>
 
     <footer>
         <p>&copy; 2025 Native Innovative Designs</p>
     </footer>
+    <script src="scripts/contact.js" defer></script>
 </body>
 </html>
