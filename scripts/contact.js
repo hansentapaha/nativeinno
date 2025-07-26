@@ -19,7 +19,7 @@
       nickname: form.nickname.value // honeypot
     };
 
-    const response = await fetch("https://script.google.com/macros/s/AKfycbyyEGRaxT9PQ5STmt_yr-VsvLQCfqt-5aMSDL9jVKMSzxIAyH5mZ8X4bn3ls58IFCvfGQ/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbxLFugJLlivCuO0hfsu88nCuaMe7q9o1iGk6jiniXAsSlu_oxUCGqLQUaK1WW0A9UjqTw/exec", {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
